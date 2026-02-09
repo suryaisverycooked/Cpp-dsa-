@@ -1,0 +1,9 @@
+all patterns have a similar procedure to solve
+1- count no. of rows(i) and no. of columns(j) 
+    if both are equal then both loops i and j will run between (i/j<=n)
+    else i will run till n and j will run till (i<=n) and (j<=i)
+2- if pattern is increasing triangle j<i and for decreasing triangle j<n-i+1
+3- check the values/digits are they changing wrt to rows or columns or both
+4- try create a formula for the pattern wrt rows/columns or both
+5- check where the variables must be declared in/outside the loop
+6- dry run for 3 numbers if correct then rest is correct
