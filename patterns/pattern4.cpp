@@ -1,4 +1,4 @@
-// increasing rectangle of * pattern
+//decreasing rectangle of * pattern
 #include <iostream>
 using namespace std;
 int main()
