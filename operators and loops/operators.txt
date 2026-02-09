@@ -1,0 +1,34 @@
+--> xor (^)(any input 1 output is 1)
+x y | z
+0 0 | 0
+0 1 | 1
+1 0 | 1
+1 1 | 0
+
+--> or (|)(any 1 or both input 1 output is 1)
+x y | z
+0 0 | 0
+0 1 | 1
+1 0 | 1
+1 1 | 1
+
+--> and (&)(both input must be 1 for output 1)
+x y | z
+0 0 | 0
+0 1 | 0
+1 0 | 0
+1 1 | 1
+
+--> not (~)(negates if 1 then 0 and 0 then 1)
+x | z
+0 | 1
+1 | 0
+
+-> leftshift(<<)(add the number of 0's to right)
+5<<1 will shift the bits by 1 so 5 is 0101 after left shift it will be 1010
+if 5<<2 then left shift each bit by 2 0101 will be 10100
+
+--> rightshift(>>)(basically like removing the first digit)
+5>>1 will shift every bit once to the right side like 0101 will be 0010
+5>>2 will shift each bit twice to right making it 0101 to 0001
+
