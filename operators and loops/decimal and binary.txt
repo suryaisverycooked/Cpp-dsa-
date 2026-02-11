@@ -1,0 +1,39 @@
+computers convert to decimal to binary for it to understand the instruction
+but breaking down the conversion we have:
+    Ex- 7
+    binary is either 0 or 1 so it can hold only 2 values.
+    we divide 7 with 2 and store the remainder until the original number(7)becomes 0 and then reverse the stored remainder to get
+    binary.
+    which works like this
+                         division:   7/2 -> 3/2 -> 1/2 -> 0
+                         remainder:   1      1      1
+                         reversing this we get 111 which is 7 in binary
+in pprogram code
+we save remainder as bit = n%2
+
+#include <iostream>
+#include<math.h>
+using namespace std;
+int main() {
+            int n,i=0;
+            int digit, answer=0;
+            cout<<"Enter the value of N: ";
+            cin>>n;
+            while(n!=0){
+                    int bit = n%2;
+                    answer = bit*(pow(10,i)) + answer;
+                    n=n/2;
+                    i++;
+            }
+            cout<<answer;
+}
+and to store answer we do bit*pow(10,i) + answer ( i is initially 0)
+so for 7 it woild be 111 but to reverse and store it we do 1 * 10^0 + 0 = 1
+then again answer = 1*10 + 1 = 11
+then finally answer = 1*10^2 + 11 = 
+
+*** right shift operator is liking dividing again n again by 2 >>
+*** left shift operator is like multiplying with powers of 2 <<
+
+for binary to decimal-
+we can make use of the left shift operator

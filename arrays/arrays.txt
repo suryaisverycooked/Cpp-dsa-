@@ -1,0 +1,15 @@
+An array is a non built in, linear,static datatype. An array is a contiguous block of memory that contains data of the same data-
+type.
+
+Declaration:
+<datatype> arr_name[sizeofarray];
+Ex- int arr[5];
+
+to initialize we have to make use of for loop iterating from the first index(0)to the last index(size-1/n-1)-
+for(int i=0 ; i<n ;i++)
+
+an array can be passed to functions with the two parameters(arr_name,arr_size)-
+Ex- void print(int arr[],int n)
+
+index starts from 0 to n-1
+a[0]- can access the value at first index and same for other indexes

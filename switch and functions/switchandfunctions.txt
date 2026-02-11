@@ -1,0 +1,63 @@
+>> switch is used usually for menu driven programs, coupled with an infinite loop.
+switch(choice){
+    case 1:
+            ------
+            break;
+    case 2:
+            ------
+            break;
+    default:
+            -------
+}
+can escape the loop with exit(0).
+
+->> functions are reusable blocks of code that can be used for code reducibility and readability.
+int Max(int x, int y){
+    if x>y
+        return x;
+    else
+        return y;
+}
+int  main(){
+    take two inputs a and b;
+    Max(a,b);
+    Max(c,d);
+    -
+    -
+    -
+}
+
+->> PasS by value:
+
+void print(int a++){
+    cout<<a<<endl;
+}
+int main()
+{
+    print(b);
+    cout<<b<<endl;
+}
+
+#include<iostream>
+using namespace std;
+void print(int a){
+    a++;
+    cout<<a<<endl;
+}
+int main()
+{
+    int b;
+    cout<<"Enter a number: ";
+    cin>>b;
+    print(b);
+    cout<<b<<endl;
+}
+
+The output will be (lets say b =7) we get 8 7 , this is because when we call a function and pass a value to it a copy of the called
+function is created and changes are only made there and hence changes as a++ is only visible in the called function and is not
+updated in the main function. in main b will be 7 and for the function called b will be 8.
+
+->> PasS by reference:
+When the address/index of the memory block is passed in the called function then both the functions main and the called function
+will have the changes as the address is being manipulated.
+Ex- Arrays
